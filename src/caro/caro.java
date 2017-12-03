@@ -72,7 +72,7 @@ public class caro extends javax.swing.JFrame {
         if( kq == 0){
             if(ds.isEmpty()){
                 kq = 1;
-                int option = JOptionPane.showConfirmDialog(null,"Player vs PC hòa nhau\nNew Game?","",JOptionPane.YES_NO_OPTION);
+                int option = JOptionPane.showConfirmDialog(null,"Player and PC draw\nNew Game?","",JOptionPane.YES_NO_OPTION);
                 if( option == JOptionPane.YES_OPTION){
                     this.dispose();
                     new caro().setVisible(true);
@@ -106,7 +106,7 @@ public class caro extends javax.swing.JFrame {
                     btn[1][1].setIcon(X1);
                     btn[0][2].setIcon(X1);
                 }
-                int option = JOptionPane.showConfirmDialog(null,"Player thắng\nNew Game?","",JOptionPane.YES_NO_OPTION);
+                int option = JOptionPane.showConfirmDialog(null,"Player win\nNew Game?","",JOptionPane.YES_NO_OPTION);
                 if( option == JOptionPane.YES_OPTION){
                     this.dispose();
                     new caro().setVisible(true);
@@ -138,7 +138,7 @@ public class caro extends javax.swing.JFrame {
                     btn[1][1].setIcon(O1);
                     btn[0][2].setIcon(O1);
                 }
-                int option = JOptionPane.showConfirmDialog(null,"PC thắng\nNew Game?","",JOptionPane.YES_NO_OPTION);
+                int option = JOptionPane.showConfirmDialog(null,"PC win\nNew Game?","",JOptionPane.YES_NO_OPTION);
                 if( option == JOptionPane.YES_OPTION){
                     this.dispose();
                     new caro().setVisible(true);
