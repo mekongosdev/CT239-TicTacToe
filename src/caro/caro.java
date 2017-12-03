@@ -4,6 +4,7 @@ package caro;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Point;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -15,10 +16,10 @@ import javax.swing.JOptionPane;
 public class caro extends javax.swing.JFrame {
     Banco bc = new Banco();
     JButton btn[][] = new JButton[3][3];
-    ImageIcon X = new ImageIcon("src\\images\\X.png");
-    ImageIcon O = new ImageIcon("src\\images\\O.png");
-    ImageIcon X1 = new ImageIcon("src\\images\\X1.png");
-    ImageIcon O1 = new ImageIcon("src\\images\\O1.png");
+    ImageIcon X = new ImageIcon(getClass().getClassLoader().getResource("images/X.png"));
+    ImageIcon O = new ImageIcon(getClass().getClassLoader().getResource("images/O.png"));
+    ImageIcon X1 = new ImageIcon(getClass().getClassLoader().getResource("images/X1.png"));
+    ImageIcon O1 = new ImageIcon(getClass().getClassLoader().getResource("images/O1.png"));
     int kq;
     public caro() {
         initComponents();
