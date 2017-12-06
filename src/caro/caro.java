@@ -156,6 +156,7 @@ public class caro extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Tic-Tac-Toe");
 
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 400));
 
